@@ -16,7 +16,7 @@
 		since I was 5. My favorite Pokemon is <a href="https://www.pokemon.com/us/pokedex/flygon">Flygon.</a> I'm currently trying to catch as many shiny Pokemon as I can. I currently
 		have 97 shiny Pokemon.</td>
 		<td class="container"><img src="flygon.png" alt="flygon">
-			<div class="overlay"><img src="shinyflygon.png" alt="sflygon"></td></tr></table>
+			<div class="overlay"><img src="shinyflygon.png" alt="sflygon"></div></td></tr></table>
 
 </body>
 </html>

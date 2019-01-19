@@ -23,6 +23,7 @@ li {
 	float: left;
 }
 #flygon {
+	padding: 40px 0;
 	background: url('flygon.png') no-repeat;
 	height: 200px;
 	width: 200px;

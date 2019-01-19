@@ -18,12 +18,20 @@ table {
 	margin-left: 20px;
 	margin-right: 20px;
 }
+ul {
+	overflow: hidden;
+	background-color: #333;
+}
 li {
-	display: inline;
 	float: left;
 }
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
 #flygon {
-	padding-top: 40px;
 	background: url('flygon.png') no-repeat;
 	height: 200px;
 	width: 200px;

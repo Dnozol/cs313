@@ -22,8 +22,8 @@
 		<td id="flygon"><i class="caption">Hover over me to see Flygon's shiny form</i></td></tr></table>
 <?php 
 	$info = getdate();
-	$time = $info['hours'] . $info['minutes'] . $info['seconds'];
-	echo $time;
+	$time = $info['hours'] . " : " . $info['minutes'] . " : " . $info['seconds'];
+	echo "The current time is: $time";
 ?>
 </body>
 </html>

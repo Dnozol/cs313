@@ -1,9 +1,8 @@
 h1 {
 	text-align: center;
 }
-
 body {
-	background-color: #555555;
+	background-color: #777777;
 }
 img {
 	max-width: auto;
@@ -11,8 +10,14 @@ img {
 }
 td {
 	margin: 10px;
+	padding: 10px;
+	font-family: calibri;
 }
 table {
 	margin-left: 20px;
 	margin-right: 20px;
+}
+li {
+	display: inline;
+	float: left;
 }

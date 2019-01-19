@@ -8,11 +8,14 @@
 </head>
 <body>
 	<h1>Welcome to my page!</h1>
+	<br>
+	<div id="navbar"></div>
 	<table><tr><td>
 	<img src="me.jpg" alt="Me"></td>
 	<td>My name is Dean. One of my favorite things is Pokemon! I've been playing pokemon
 		since I was 5. My favorite Pokemon is <a href="https://www.pokemon.com/us/pokedex/flygon">Flygon.</a> I'm currently trying to catch as many shiny Pokemon as I can. I currently
-		have 97 shiny Pokemon></td></tr></table>
+		have 97 shiny Pokemon</td>
+		<td><img src="flygon.png" alt="flygon"></td></tr></table>
 
 </body>
 </html>

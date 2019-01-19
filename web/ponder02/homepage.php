@@ -21,6 +21,7 @@
 		have 97 shiny Pokemon.</td>
 		<td id="flygon"><i class="caption">Hover over me to see Flygon's shiny form</i></td></tr></table>
 <?php 
+	date_default_timezone_set('America/Denver');
 	$info = getdate();
 	$time = $info['hours'] . " : " . $info['minutes'] . " : " . $info['seconds'];
 	echo "The current time is: $time";

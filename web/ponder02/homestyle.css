@@ -3,9 +3,16 @@ h1 {
 }
 
 body {
-	background-color: #111111;
+	background-color: #555555;
 }
 img {
 	max-width: auto;
-	max-height: 200px;
+	max-height: 300px;
+}
+td {
+	margin: 10px;
+}
+table {
+	margin-left: 20px;
+	margin-right: 20px;
 }

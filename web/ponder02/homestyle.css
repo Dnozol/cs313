@@ -22,16 +22,9 @@ li {
 	display: inline;
 	float: left;
 }
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	right: 0;
-	left; 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
+#flygon {
+	background-image: url('flygon.png');
 }
-.container:hover .overlay {
-	opacity: 1;
+#flygon:hover {
+	background-image: url('shinyflygon.png');
 }

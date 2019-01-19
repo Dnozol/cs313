@@ -19,7 +19,7 @@
 	<td>My name is Dean. One of my favorite things is Pokemon! I've been playing pokemon
 		since I was 5. My favorite Pokemon is <a href="https://www.pokemon.com/us/pokedex/flygon">Flygon.</a> I'm currently trying to catch as many shiny Pokemon as I can. I currently
 		have 97 shiny Pokemon.</td>
-		<td id="flygon">Hover over me to see Flygon's shiny form</td></tr></table>
+		<td id="flygon"><i>Hover over me to see Flygon's shiny form</i></td></tr></table>
 
 </body>
 </html>

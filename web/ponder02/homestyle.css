@@ -31,6 +31,9 @@ li a {
 	text-align: center;
 	text-decoration: none;
 }
+.caption {
+	font-size: 12px;
+}
 #flygon {
 	background: url('flygon.png') no-repeat;
 	height: 200px;

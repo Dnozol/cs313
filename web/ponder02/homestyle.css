@@ -1,3 +1,11 @@
 h1 {
 	text-align: center;
 }
+
+body {
+	background-color: #111111;
+}
+img {
+	max-width: auto;
+	max-height: 200px;
+}

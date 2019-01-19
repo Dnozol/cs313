@@ -20,6 +20,10 @@
 		since I was 5. My favorite Pokemon is <a href="https://www.pokemon.com/us/pokedex/flygon">Flygon.</a> I'm currently trying to catch as many shiny Pokemon as I can. I currently
 		have 97 shiny Pokemon.</td>
 		<td id="flygon"><i class="caption">Hover over me to see Flygon's shiny form</i></td></tr></table>
-
+<?php 
+	$info = getdate();
+	$time = $info['hours'] . $info['minutes'] . $info['seconds'];
+	echo $time;
+?>
 </body>
 </html>

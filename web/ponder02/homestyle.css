@@ -38,8 +38,8 @@ li a {
 }
 #flygon {
 	background: url('flygon.png') no-repeat;
-	height: 200px;
-	width: 200px;
+	height: 250px;
+	width: 250px;
 }
 #flygon:hover {
 	background: url('shinyflygon.png') no-repeat;

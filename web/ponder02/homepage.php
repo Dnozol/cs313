@@ -12,7 +12,7 @@
 	<ul>
 		<li><a href="assignments.php">Web II Assignments</a></li>
 		<li><a href="https://www.pokemon.com/us/">Pokemon Official Page</a></li>
-		<li><a href="byui.edu">BYU-Idaho Home Page</a></li>
+		<li><a href="www.byui.edu">BYU-Idaho Home Page</a></li>
 	</ul>
 	<table><tr><td>
 	<img src="me.jpg" alt="Me"></td>

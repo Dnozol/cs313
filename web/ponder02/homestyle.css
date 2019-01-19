@@ -23,8 +23,10 @@ li {
 	float: left;
 }
 #flygon {
-	background-image: url('flygon.png');
+	background: url('flygon.png');
+	height: 200px;
+	width: 200px;
 }
 #flygon:hover {
-	background-image: url('shinyflygon.png');
+	background: url('shinyflygon.png');
 }

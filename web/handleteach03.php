@@ -12,8 +12,9 @@
 	$comments = $_POST["comments"];
 
 	echo "name: $name";
-	echo "<a href='mailto:" . $email . "?comments: " .  $comments ."'>";
-	
+	echo "<a href='mailto:" . $email . "?comments: " .  $comments ."'>$email</a>";
+	echo "$comments"
+
 ?>
 </body>
 </html>

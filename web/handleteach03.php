@@ -24,7 +24,6 @@
 	 	echo $results;
 	 	echo "<br>";
 	 }
-	//print_r($cont);
 ?>
 </body>
 </html>

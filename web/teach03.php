@@ -4,13 +4,35 @@
 	<title>Form</title>
 </head>
 <body>
+
+	<?php 
+		$majors = array("CS" => "Computer Science",
+						"WDD" => "Web Design and Development",
+						"CIT" => "Computer Information Technology",
+						"CE" => "Computer Engineering");
+		$continents = array("NA" => "North America",
+							"SA" => "South America",
+							"EU" => "Europe",
+							"AS" => "Asia",
+							"AU" => "Australia",
+							"AF" => "Africa",
+							"AN" => "Antarctica");
+	 ?>
+
 	<form action="handleteach03.php" method="post" >
 		Name<input type="text" name="name"><br>
 		Email<input type="text" name="email"><br>
-		<input type="radio" name="major" value="Computer Science">Computer Science<br>
+
+		<?php
+			foreach($majors as $results) {
+				echo "<input type='radio' name='major' value='" . 
+				array_keys($results) . "'>" . $results . "<br>";
+			}
+		?>
+		<!-- <input type="radio" name="major" value="Computer Science">Computer Science<br>
 		<input type="radio" name="major" value="Web Design and Development">Web Design and Development<br>
 		<input type="radio" name="major" value="Computer Information Technology">Computer Information Technology<br>
-		<input type="radio" name="major" value="Computer Engineering">Computer Engineering<br>
+		<input type="radio" name="major" value="Computer Engineering">Computer Engineering<br> -->
 		<textarea name="comments" rows="4" cols="50"></textarea><br>
 		<br>
 		Which continents have you visited:

@@ -24,9 +24,10 @@
 		Email<input type="text" name="email"><br>
 
 		<?php
-			foreach($majors as $results) {
+
+			foreach($majors as $key => $results) {
 				echo "<input type='radio' name='major' value='" . 
-				array_keys($results) . "'>" . $results . "<br>";
+				$key . "'>" . $results . "<br>";
 			}
 		?>
 		<!-- <input type="radio" name="major" value="Computer Science">Computer Science<br>

@@ -20,10 +20,11 @@
 		$cont= $_POST['c1'];
 	}
 
-	// foreach($results in $cont) {
-
-	// }
-	print_r($cont);
+	 foreach($results in $_POST['c1']) {
+	 	echo $results;
+	 	echo "<br>";
+	 }
+	//print_r($cont);
 ?>
 </body>
 </html>

@@ -21,7 +21,7 @@
 	}
 
 	foreach($results in $cont) {
-		echo "$results<br>"
+		echo "$results<br>";
 	}
 ?>
 </body>

@@ -15,13 +15,13 @@
 		<br>
 		Which continents have you visited:
 		<br>
-		<input type="checkbox" name="c1" value="North America">NA<br>
-		<input type="checkbox" name="c1" value="South America">SA<br>
-		<input type="checkbox" name="c1" value="Europe">Eu<br>
-		<input type="checkbox" name="c4" value="Asia">As<br>
-		<input type="checkbox" name="c5" value="Australia">Au<br>
-		<input type="checkbox" name="c6" value="Africa">Af<br>
-		<input type="checkbox" name="c7" value="Antarctica">Ant<br>
+		<input type="checkbox" name="c1[]" value="North America">NA<br>
+		<input type="checkbox" name="c1[]" value="South America">SA<br>
+		<input type="checkbox" name="c1[]" value="Europe">Eu<br>
+		<input type="checkbox" name="c1[]" value="Asia">As<br>
+		<input type="checkbox" name="c1[]" value="Australia">Au<br>
+		<input type="checkbox" name="c1[]" value="Africa">Af<br>
+		<input type="checkbox" name="c1[]" value="Antarctica">Ant<br>
 
 		<button type="submit">Submit</button>
 	</form>

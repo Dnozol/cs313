@@ -16,10 +16,11 @@
 	echo "<a href='mailto:" . $email . "?comments: " .  $comments ."'>$email</a><br>";
 	echo "$comments<br>";
 	echo "You have visited:<br>";
-	if(isset($_POST['c1']) && $_POST['c1'] == 'Yes') {
-		echo "$_POST["c1"]";
+	if (isset($_POST['c1'])) {
+		$cont= $_POST['c1'];
 	}
 
+	echo "<br>$cont";
 ?>
 </body>
 </html>

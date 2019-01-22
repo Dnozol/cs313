@@ -20,7 +20,7 @@
 		$cont= $_POST['c1'];
 	}
 
-	 foreach($results as $_POST['c1']) {
+	 foreach($_POST['c1'] as $results) {
 	 	echo $results;
 	 	echo "<br>";
 	 }

@@ -12,7 +12,7 @@
 	$comments = $_POST["comments"];
 
 	echo "name: $name<br>";
-	echo "major: $major";
+	echo "major: $major<br>";
 	echo "<a href='mailto:" . $email . "?comments: " .  $comments ."'>$email</a><br>";
 	echo "$comments<br>";
 	echo "You have visited:<br>";
@@ -20,7 +20,9 @@
 		$cont= $_POST['c1'];
 	}
 
-	echo "<br>$cont";
+	foreach($results in $cont) {
+		echo "$results<br>"
+	}
 ?>
 </body>
 </html>

@@ -6,6 +6,18 @@
 <body>
 
 <?php 
+		$majors = array("CS" => "Computer Science",
+						"WDD" => "Web Design and Development",
+						"CIT" => "Computer Information Technology",
+						"CE" => "Computer Engineering");
+		$continents = array("NA" => "North America",
+							"SA" => "South America",
+							"EU" => "Europe",
+							"AS" => "Asia",
+							"AU" => "Australia",
+							"AF" => "Africa",
+							"AN" => "Antarctica");
+
 	$name = $_POST["name"];
 	$email = $_POST["email"];
 	$major = $_POST["major"];

@@ -26,7 +26,9 @@ session_start();
 			
 		</table>
 		<br><br>
-		
+		<?php
+			echo "<br>The number of items= " . sizeof($_SESSION['cart']); 
+		?>
 		<a href="viewcart.php">View Your Cart</a>
 	</form>
 </body>

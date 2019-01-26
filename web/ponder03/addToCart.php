@@ -11,7 +11,6 @@
 <?php
 	$product=$_POST['item'];
 	array_push($_SESSION['cart'], $product);
-	print_r($_SESSION['cart']);
 
 	//header("Location: inventory.php");
 	foreach($product as $key => $results) {

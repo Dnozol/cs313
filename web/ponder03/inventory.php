@@ -7,7 +7,7 @@
  	<link rel="stylesheet" type="text/css" href="ponder03.css">
 </head>
 <body>
-	<h1 id="center">Welcome to the Pokemon Center</h1>
+	<h1 class="center">Welcome to the Pokemon Center</h1>
 	<hr>
 		<form>
 		<table><th><b>Item</b></th><th><b>Price</b></th><th>Add to cart?</th>
@@ -18,8 +18,9 @@
 			<tr><td>Item 1</td><td>$6.00</td><td><a href="">Add to cart</a></td></tr>
 			
 		</table>
+		<br><br>
 
-		<button type="submit">Proceed to purchase</button>
+		<button onclick="viewcart.php">View Your Cart</button>
 		<button type="reset">Clear cart</button>
 	</form>
 </body>

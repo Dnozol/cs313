@@ -13,7 +13,10 @@
 	<a href="inventory.php">Continue Shopping</a>
 	<a href="checkout.php">Proceed to checkout</a><br>
 	<?php
-		print_r($_SESSION);
+		foreach($item as $key => $results) {
+		echo "$results<br>";
+	}
+
 	?>
 </body>
 </html>

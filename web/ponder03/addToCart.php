@@ -14,7 +14,7 @@
 	print_r($_SESSION['cart']);
 
 	//header("Location: inventory.php");
-	foreach($item as $key => $results) {
+	foreach($product as $key => $results) {
 		echo "$results<br>";
 	}
 

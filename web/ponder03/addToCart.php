@@ -14,6 +14,9 @@
 	print_r($_SESSION['cart']);
 
 	//header("Location: inventory.php");
+	foreach($item as $key => $results) {
+		echo "$results<br>";
+	}
 
 ?>
 <a href="inventory.php">Inventory</a>

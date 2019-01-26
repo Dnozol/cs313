@@ -17,7 +17,7 @@ session_start();
 	?>
 	<h1 class="center">Welcome to the Pokemon Center</h1>
 	<hr>
-		<form method="get" action="addToCart.php">
+		<form method="post" action="addToCart.php">
 		<table><th><b>Item</b></th><th><b>Price</b></th><th>Add to cart?</th>
 			<tr><td>Item 1</td><td>$32.99</td><td><button type="submit" name="item" value="ball_collection">Add to cart</button></td></tr>
 			<tr><td>Item 2</td><td>$20.00</td><td><button onclick="addToSession(2, 20.00)">Add to cart</button></td></tr>

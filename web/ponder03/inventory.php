@@ -36,7 +36,11 @@ session_start();
 	</form>
 	<?php
 			$product=$_POST['item'];
-			array_push($_SESSION['cart'], $product);
+			foreach ($product as $key => $value) {
+			
+				array_push($_SESSION['cart'], $value);
+			}
+			
 			echo "<br>The number of items= " . sizeof($_SESSION['cart']); 
 		?>
 		<a href="viewcart.php">View Your Cart</a>

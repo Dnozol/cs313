@@ -13,7 +13,8 @@
 	<a href="inventory.php">Continue Shopping</a>
 	<a href="checkout.php">Proceed to checkout</a><br>
 	<?php
-		foreach($item as $key => $results) {
+		$product = $_SESSION['cart'];
+		foreach($product as $key => $results) {
 		echo "$results<br>";
 	}
 

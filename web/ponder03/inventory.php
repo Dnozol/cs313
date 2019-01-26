@@ -4,6 +4,7 @@
 	<title>Welcome to the Pokemon Center!</title>
   	<meta charset="UTF-8">
  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 	<link rel="stylesheet" type="text/css" href="ponder03.css">
 </head>
 <body>
 	<h1 id="center">Welcome to the Pokemon Center</h1>

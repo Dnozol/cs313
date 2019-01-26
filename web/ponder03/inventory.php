@@ -16,7 +16,7 @@ session_start();
 	?>
 	<h1 class="center">Welcome to the Pokemon Center</h1>
 	<hr>
-		<form method="post" action="addToCart.php">
+		<form method="post" action="">
 		<table><th><b>Item</b></th><th><b>Price</b></th><th>Add to cart?</th>
 			<tr><td>Item 1</td><td>$32.99</td><td><button type="submit" name="item[]" value="ball_collection">Add to cart</button></td></tr>
 			<tr><td>Item 2</td><td>$20.00</td><td><button type="submit" name="item[]" value="Giant_plush_snorlax">Add to cart</button></td></tr>
@@ -27,6 +27,8 @@ session_start();
 		</table>
 		<br><br>
 		<?php
+			$product=$_POST['item'];
+			array_push($_SESSION['cart'], $product);
 			echo "<br>The number of items= " . sizeof($_SESSION['cart']); 
 		?>
 		<a href="viewcart.php">View Your Cart</a>

@@ -20,7 +20,6 @@ session_start();
 		<form method="post" action="">
 		<table><th><b>Item</b></th><th><b>Price</b></th><th>Add to cart?</th>
 	
-			
 			<tr><td><img src="pokeballs.jpg" alt="pokeballs"><p>Pokeball Collection</p>
 			</td><td>$32.99</td><td><input type="checkbox" name="item[]" value="ball_collection">Add to cart</td></tr>
 			<tr><td><img src="plushSnorlax.jpg" alt="snorlax"><p>Giant Plush Snorlax</p>

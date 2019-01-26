@@ -8,7 +8,7 @@
 	<form action="purchase.php" method="post">
 		<textarea rows="4" cols="40" name="address"></textarea>
 		<button type="submit">Complete Purchase</button>
-		<button onclick="viewcart.php">Return to cart</button>
+		<a href="viewcart.php">Return to cart</a>
 	</form>
 </body>
 </html>

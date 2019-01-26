@@ -7,7 +7,7 @@
 </head>
 <body>
 	<h1 class="center">Your Cart</h1>
-	<button onclick="inventory.php">Continue Shopping</button>
-	<button>Proceed to Purchase</button>
+	<a href="inventory.php">Continue Shopping</a>
+	<a href="checkout.php">Proceed to checkout</a>
 </body>
 </html>

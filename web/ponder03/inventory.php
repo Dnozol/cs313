@@ -13,7 +13,6 @@ session_start();
 <body>
 	<?php
 		$_SESSION['cart']=array();
-		array_push($_SESSION['cart'],'apple');
 	?>
 	<h1 class="center">Welcome to the Pokemon Center</h1>
 	<hr>

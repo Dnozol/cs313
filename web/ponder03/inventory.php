@@ -11,7 +11,7 @@ session_start();
  	<script type="text/javascript">
  		function addToSession(itemnum, price) {
  			<?php
- 				$_SESSION[itemnum] = price;
+ 				$_SESSION["itemnum"] = "price";
  			?>
  		}
  	</script>

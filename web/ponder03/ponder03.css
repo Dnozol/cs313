@@ -3,7 +3,6 @@ body {
 }
 h1 {
 	color: #b30000;
-	text-align: center;
 }
 tr:hover {
 	background-color: #f6f6f6;
@@ -12,4 +11,8 @@ th, td {
 	border-bottom: 1px solid #ccc;
 	text-align: left;
 	padding: 10px;
+}
+.center {
+	text-align: center;
+
 }

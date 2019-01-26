@@ -24,7 +24,7 @@ session_start();
 			<tr><td>Item 4</td><td>$9.99</td><td><button onclick="addToSession(4, 9.99)">Add to cart</button></td></tr>
 			<tr><td>Item 5</td><td>$6.00</td><td><button onclick="addToSession(5, 6.00)">Add to cart</button></td></tr> -->
 			
-			<tr><td>Item 1</td><td>$32.99</td><td><input type="checkbox" name="item[]" value="ball_collection">Add to cart</td></tr>
+			<tr><td><img src="pokeballs.jpg" alt="pokeballs"></td><td>$32.99</td><td><input type="checkbox" name="item[]" value="ball_collection">Add to cart</td></tr>
 			<tr><td>Item 2</td><td>$20.00</td><td><input type="checkbox" name="item[]" value="Giant_plush_snorlax">Add to cart</td></tr>
 			<tr><td>Item 3</td><td>$14.98</td><td><input type="checkbox" name="item[]" value="Badge_collecion">Add to cart</td></tr>
 			<tr><td>Item 4</td><td>$9.99</td><td><input type="checkbox" name="item[]" value="Large_pikachu_plush">Add to cart</td></tr>

@@ -20,7 +20,7 @@
 		</table>
 		<br><br>
 
-		<button onclick="location.href = 'viewcart.php';">View Your Cart</button>
+		<button href="viewcart.php">View Your Cart</button>
 		<button type="reset">Clear cart</button>
 	</form>
 </body>

@@ -12,6 +12,7 @@ session_start();
  		function addToSession(itemnum, price) {
  			<?php
  				$_SESSION[itemnum] = price;
+ 				print_r($_SESSION);
  			?>
  		}
  	</script>
@@ -29,9 +30,7 @@ session_start();
 			
 		</table>
 		<br><br>
-		<?php
-			print_r($_SESSION);
-		?>
+		
 		<a href="viewcart.php">View Your Cart</a>
 	</form>
 </body>

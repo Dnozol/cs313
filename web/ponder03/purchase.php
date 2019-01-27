@@ -9,6 +9,7 @@
  	<link rel="stylesheet" type="text/css" href="ponder03.css">
 </head>
 <body>
+	<h1>Your purchase has been confirmed</h1>
 	Confirm address:
 	<?php
 		echo htmlspecialchars($_POST["address"]);

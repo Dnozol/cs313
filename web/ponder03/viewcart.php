@@ -24,12 +24,13 @@
 		 			echo "<tr><td>" . $product[$i][0] . "</td><td>" . $product[$i][1] .
 		 	 			 "</td><td>" . $product[$i][2] . "</td></tr>";
 		 	 		$items++;
-
+		 	 		$total += $product[$i][2];
 			 	}
 			}
 
 		}
-		echo "</table>"
+		echo "</table><br>"
+		echo "Total: $" . $total;
 	?>
 </body>
 </html>

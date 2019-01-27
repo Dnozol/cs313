@@ -16,8 +16,6 @@
 		<a href="viewcart.php">Return to cart</a>
 	</form>
 		
-	}
-
-	?>
+	
 </body>
 </html>

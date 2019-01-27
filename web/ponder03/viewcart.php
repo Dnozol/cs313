@@ -14,11 +14,11 @@
 	<a href="checkout.php">Proceed to checkout</a><br>
 	<?php
 		include 'product.php';
-		
+		$items = 0;
 		$total = 0.0;
-		//echo "$product[$i][3] == $_SESSION['cart'][$items]";
+		echo "$_SESSION['cart'][$items]";
 		// for($i = 0; $i < 5; $i++) {
-		// 	 $items = 0;
+		
 		// 	if (isset($_SESSION['cart'][$items])) {
 		// 	 	if ($product[$i][3] == $_SESSION['cart'][$items] ) {
 		// 			echo "<table><tr><td>" . $product[$i][0] . "</td><td>" . $product[$i][1] .

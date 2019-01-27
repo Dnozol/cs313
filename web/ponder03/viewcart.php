@@ -29,7 +29,7 @@
 			}
 
 		}
-		echo "</table><br>"
+		echo "</table><br>";
 		echo "Total: $" . $total;
 	?>
 </body>

@@ -16,7 +16,7 @@
 		include 'product.php';
 		$items = 0;
 		$total = 0.0;
-		echo "$_SESSION['cart'][$items]";
+		echo $_SESSION['cart'][$items];
 		// for($i = 0; $i < 5; $i++) {
 		
 		// 	if (isset($_SESSION['cart'][$items])) {

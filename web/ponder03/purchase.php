@@ -13,12 +13,6 @@
 	<?php
 		echo htmlspecialchars($_POST["address"]);
 	?>
-		<?php
-		$product = $_SESSION['cart'];
-		foreach($product as $key => $results) {
-		echo "$results<br>";
-	}
 
-	?>
 </body>
 </html>

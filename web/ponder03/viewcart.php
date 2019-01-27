@@ -13,10 +13,14 @@
 	<a href="inventory.php">Continue Shopping</a>
 	<a href="checkout.php">Proceed to checkout</a><br>
 	<?php
-		$product = $_SESSION['cart'];
-		foreach($product as $key => $results) {
-		echo "$results<br>";
-	}
+		include 'product.php';
+		
+		// $item = $_SESSION['cart'];
+		// for($i = 0; $i < 5; $i++) {
+		// 	if ($product[$i][3] == )
+		
+		// }
+		echo $_SESSION['cart'][0];
 
 	?>
 </body>

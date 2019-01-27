@@ -15,10 +15,7 @@
 		<button type="submit">Complete Purchase</button><br>
 		<a href="viewcart.php">Return to cart</a>
 	</form>
-		<?php
-		$product = $_SESSION['cart'];
-		foreach($product as $key => $results) {
-		echo "$results<br>";
+		
 	}
 
 	?>

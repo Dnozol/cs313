@@ -19,14 +19,14 @@
 		echo "<table>";
 		 for($i = 0; $i < 5; $i++) {
 		
-		 	//if (isset($_SESSION['cart'][$items])) {
+		 	if (isset($_SESSION['cart'][$items])) {
 		 	 	if ($product[$i][3] == $_SESSION['cart'][$items] ) {
 		 			echo "<tr><td>" . $product[$i][0] . "</td><td>" . $product[$i][1] .
 		 	 			 "</td><td>" . $product[$i][2] . "</td></tr>";
 		 	 		$items++;
 
 			 	}
-			//}
+			}
 
 		}
 		echo "</table>"

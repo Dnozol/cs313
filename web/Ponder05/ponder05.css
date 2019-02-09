@@ -1,28 +1,29 @@
 .flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 .sidebar {
-  flex: 20%;
-  padding: 20px;
-  background-color: #555;
-  font-size: 16px;
-  border: 5px solid #c12230;
-  color: white;
-  margin: 10px;
-  font-family: arial;
+  	flex: 20%;
+  	padding: 20px;
+  	background-color: #555;
+  	font-size: 16px;
+  	border: 5px solid #c12230;
+  	color: white;
+	margin: 10px;
+	font-family: arial;
 }
 .main {
-  flex: 70%;
-  padding: 20px;
-  background-color: white;
-  font-size: 20px;
-  margin: 10px;
-  font-family: Calibri;
+  	flex: 70%;
+  	padding: 20px;
+  	background-color: white;
+  	font-size: 20px;
+  	margin: 10px;
+    font-family: Calibri;
 }
 #banner {
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+	text-align: center;
+   	display: block;
+   	margin-left: auto;
+   	margin-right: auto;
 }

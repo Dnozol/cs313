@@ -5,6 +5,10 @@
 	<link rel="stylesheet" type="text/css" href="ponder05.css">
 </head>
 <body>
-	<?php include 'banners.php';?>
+	<div class="flex-container">
+		<div class="main">
+			<?php include 'banners.php';?>
+		</div>
+	</div>
 </body>
 </html>

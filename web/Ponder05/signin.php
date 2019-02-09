@@ -15,8 +15,9 @@
 		<div class="main"></div>	
 			<form action="main.php" method="post">
 				User Name: <input type="text" name="username"><br>
-				Password: <input type = "text" name="password">
+				Password: <input type = "text" name="password"><br>
 				<button type="submit">Sign in</button>
+				<button type="reset">Clear</button>
 			</form>
 		</div> <!--end of main flexbox-->
 	</div><!--end of flex container-->

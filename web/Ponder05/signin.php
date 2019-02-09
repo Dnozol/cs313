@@ -14,7 +14,7 @@
 		</div><!--end of sidebar flexbox-->
 		<div class="main"></div>	
 			<form action="main.php" method="post">
-				User Name: <input type="text" name="username">
+				User Name: <input type="text" name="username"><br>
 				Password: <input type = "text" name="password">
 				<button type="submit">Sign in</button>
 			</form>

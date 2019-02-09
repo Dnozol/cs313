@@ -9,13 +9,16 @@
 <body>
 	<?php include 'banners.php';?>
 	<div class="flex-container">
+		<div class="sidebar">
+			This is a side bar
+		</div><!--end of sidebar flexbox-->
 		<div class="main"></div>	
 			<form action="main.php" method="post">
 				User Name: <input type="text" name="username">
 				Password: <input type = "text" name="password">
 				<button type="submit">Sign in</button>
 			</form>
-		</div>
-	</div>
+		</div> <!--end of main flexbox-->
+	</div><!--end of flex container-->
 </body>
 </html>

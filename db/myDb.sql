@@ -10,8 +10,6 @@ CASCADE;
 CREATE TABLE trainer
 ( trainer_id 	SERIAL PRIMARY KEY
 , trainer_name 	VARCHAR(20) NOT NULL
-, num_battles 	INTEGER
-, num_wins 		INTEGER
 );
 
 CREATE TABLE pokemon
@@ -23,7 +21,6 @@ CREATE TABLE pokemon
 
 CREATE TABLE team
 ( team_id 	SERIAL PRIMARY KEY
-, trainer 	VARCHAR(20) REFERENCES trainer(trainer_name)
 , team_name	VARCHAR(20) NOT NULL
 , pokemon_1 VARCHAR(20) REFERENCES pokemon(pokemon_id)
 , pokemon_2 VARCHAR(20) REFERENCES pokemon(pokemon_id)

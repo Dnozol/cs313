@@ -13,9 +13,7 @@
 	<?php include 'banners.php';?>
 	<div class="flex-container">
 		<div class="sidebar">
-			<button>Remove Team(s)</button>
-			<button>Add Team</button>
-			<button>Edit Team</button>
+			<a href="teamEditor.php">Team Editor</a>
 		</div><!--end of sidebar flexbox-->
 		<div class="main">
 			<h1>Current Teams</h1>

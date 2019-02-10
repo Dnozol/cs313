@@ -12,10 +12,13 @@
 	<?php include('banners.php'); ?>
 	<div class="flex-container">
 		<div class="sidebar">
-
+			
+			<button>Remove Team(s)</button>
+			<button>Add Team</button>
+			<button>Edit Team</button>
 		</div> <!--end of sidebar flexbox-->
 		<div class="main">
-			
+			<h1>Team Editor</h1>
 		</div><!--end of main flexbox-->
 	</div>
 

@@ -25,12 +25,12 @@ CREATE TABLE team
 ( team_id 	SERIAL PRIMARY KEY
 , trainer 	VARCHAR(20) REFERENCES trainer(trainer_name)
 , team_name	VARCHAR(20) NOT NULL
-, pokemon_1 VARCHAR(20) REFERENCES pokemon(pokemon_name)
-, pokemon_2 VARCHAR(20) REFERENCES pokemon(pokemon_name)
-, pokemon_3 VARCHAR(20) REFERENCES pokemon(pokemon_name)
-, pokemon_4 VARCHAR(20) REFERENCES pokemon(pokemon_name)
-, pokemon_5 VARCHAR(20) REFERENCES pokemon(pokemon_name)
-, pokemon_6 VARCHAR(20) REFERENCES pokemon(pokemon_name)
+, pokemon_1 VARCHAR(20) REFERENCES pokemon(pokemon_id)
+, pokemon_2 VARCHAR(20) REFERENCES pokemon(pokemon_id)
+, pokemon_3 VARCHAR(20) REFERENCES pokemon(pokemon_id)
+, pokemon_4 VARCHAR(20) REFERENCES pokemon(pokemon_id)
+, pokemon_5 VARCHAR(20) REFERENCES pokemon(pokemon_id)
+, pokemon_6 VARCHAR(20) REFERENCES pokemon(pokemon_id)
 );
 
 CREATE TABLE usertable
@@ -71,3 +71,21 @@ VALUES
 ( 'Arbok', 'Poison', NULL),
 ( 'Pikachu', 'Electric', NULL),
 ( 'Raichu', 'Electirc', NULL);
+
+INSERT INTO team
+( team_name
+, pokemon_1
+, pokemon_2
+, pokemon_3
+, pokemon_4
+, pokemon_5
+, pokemon_6
+)
+VALUES
+( 'Example_Team_Name'
+, 'Charizard'
+, 'Venusaur'
+, 'Blastoise'
+, 'Rattata'
+, 'Butterfree'
+, 'Pidgeotto');

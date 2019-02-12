@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS
   scriptures
 , topics
+, scriptures_topics
 CASCADE;
 
 CREATE TABLE scriptures

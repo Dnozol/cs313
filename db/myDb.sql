@@ -3,13 +3,13 @@ DROP TABLE IF EXISTS
   team
 , trainer
 , pokemon
-, usertable
 CASCADE;
 
 -- Create tables
 CREATE TABLE trainer
 ( trainer_id 	SERIAL PRIMARY KEY
 , trainer_name 	VARCHAR(20) NOT NULL
+, password
 );
 
 CREATE TABLE pokemon
@@ -30,11 +30,6 @@ CREATE TABLE team
 , pokemon_6 VARCHAR(20) REFERENCES pokemon(pokemon_id)
 );
 
-CREATE TABLE usertable
-( user_id 	SERIAL PRIMARY KEY
-, user_name VARCHAR(20)
-, password 	VARCHAR(100)
-);
 
 INSERT INTO pokemon
 ( pokemon_name

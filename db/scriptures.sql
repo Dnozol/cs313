@@ -63,3 +63,10 @@ CREATE TABLE scriptures_topics
 );
 
 INSERT INTO topics (name) VALUES ('Faith'), ('Sacrifice'), ('Charity');
+
+
+( topic_id
+, name
+, scriptures_topics_id
+, scriptures_id
+, topic_id)

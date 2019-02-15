@@ -1,5 +1,5 @@
 <?php
-require("dbconnect.php");
+require("dbConnect.php");
 $db = get_db();
 $course_id = htmlspecialchars($_GET["course_id"]);
 // Get the Course from the DB

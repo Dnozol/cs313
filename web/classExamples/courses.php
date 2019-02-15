@@ -1,5 +1,5 @@
 <?php
-require("dbconnect.php");
+require("dbConnect.php");
 $db = get_db();
 
 $query = 'SELECT id, name, course_code FROM course';

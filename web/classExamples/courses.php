@@ -22,17 +22,17 @@ $courses = $statement->fetchAll(PDO::FETCH_ASSOC);
     <h2>Courses</h2>
 
     <ul>
-<?php
+    <?php
 
-foreach ($courses as $course) {
-    $id = $course['id'];
-    $name = $course['name'];
-    $course_code = $course['course_code'];
+        foreach ($courses as $course) {
+        $id = $course['id'];
+        $name = $course['name'];
+        $course_code = $course['course_code'];
 
-    echo "<li><a href='notes.php?course_id=$id'>$course_code - $name</a></li>\n";
-}
+        echo "<li><a href='notes.php?course_id=$id'>$course_code - $name</a></li>\n";
+        }
 
-?>
+    ?>
 
     </ul>
 </body>

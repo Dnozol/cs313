@@ -1,10 +1,3 @@
---Drop tables to be able to create them
-DROP TABLE IF EXISTS
-  team
-, trainer
-, pokemon
-CASCADE;
-
 -- Create tables
 CREATE TABLE trainer
 ( trainer_id 	SERIAL PRIMARY KEY

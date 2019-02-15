@@ -1,11 +1,11 @@
 <?php
-//require("dbconnect.php");
-// $db = get_db();
+require("dbconnect.php");
+$db = get_db();
 
-// $query = 'SELECT id, name, course_code FROM course';
-// $statement = $db->prepare($query);
-// $statement->execute();
-// $courses = $statement->fetchAll(PDO::FETCH_ASSOC);
+$query = 'SELECT id, name, course_code FROM course';
+$statement = $db->prepare($query);
+$statement->execute();
+$courses = $statement->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 <!DOCTYPE html>
@@ -24,13 +24,13 @@
     <ul>
     <?php
 
-        // foreach ($courses as $course) {
-        // $id = $course['id'];
-        // $name = $course['name'];
-        // $course_code = $course['course_code'];
+        foreach ($courses as $course) {
+        $id = $course['id'];
+        $name = $course['name'];
+        $course_code = $course['course_code'];
 
-        // echo "<li><a href='notes.php?course_id=$id'>$course_code - $name</a></li>\n";
-        // }
+        echo "<li><a href='notes.php?course_id=$id'>$course_code - $name</a></li>\n";
+        }
 
     ?>
 

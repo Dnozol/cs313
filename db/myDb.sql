@@ -1,28 +1,32 @@
+DROP TABLE team_pokemon;
+DROP TABLE trainer;
+DROP TABLE pokemon;
+DROP TABLE team;
+
 -- Create tables
 CREATE TABLE trainer
-( trainer_id 	SERIAL PRIMARY KEY
-, trainer_name 	VARCHAR(20) NOT NULL
-, password
+( trainer_id SERIAL PRIMARY KEY
+, trainer_name  VARCHAR(20) NOT NULL
+, password VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE pokemon
-( pokemon_id 	SERIAL PRIMARY KEY
-, pokemon_name  VARCHAR(20)
-, type_1 		VARCHAR(8) NOT NULL
-, type_2 		VARCHAR(8)
+( pokemon_id SERIAL PRIMARY KEY
+, pokemon_name VARCHAR(20)
+, type_1 VARCHAR(8) NOT NULL
+, type_2 VARCHAR(8)
 );
 
 CREATE TABLE team
-( team_id 	SERIAL PRIMARY KEY
+( team_id SERIAL PRIMARY KEY
 , team_name	VARCHAR(20) NOT NULL
-, pokemon_1 VARCHAR(20) REFERENCES pokemon(pokemon_id)
-, pokemon_2 VARCHAR(20) REFERENCES pokemon(pokemon_id)
-, pokemon_3 VARCHAR(20) REFERENCES pokemon(pokemon_id)
-, pokemon_4 VARCHAR(20) REFERENCES pokemon(pokemon_id)
-, pokemon_5 VARCHAR(20) REFERENCES pokemon(pokemon_id)
-, pokemon_6 VARCHAR(20) REFERENCES pokemon(pokemon_id)
 );
 
+CREATE TABLE team_pokemon
+( team_pokemon_id SERIAL PRIMARY KEY
+, team_id    INT REFERENCES team(team_id)
+, pokemon_id INT REFERENCES pokemon(pokemon_id)
+);
 
 INSERT INTO pokemon
 ( pokemon_name
@@ -57,20 +61,3 @@ VALUES
 ( 'Pikachu', 'Electric', NULL),
 ( 'Raichu', 'Electirc', NULL);
 
-INSERT INTO team
-( team_name
-, pokemon_1
-, pokemon_2
-, pokemon_3
-, pokemon_4
-, pokemon_5
-, pokemon_6
-)
-VALUES
-( 'Example_Team_Name'
-, 'Charizard'
-, 'Venusaur'
-, 'Blastoise'
-, 'Rattata'
-, 'Butterfree'
-, 'Pidgeotto');

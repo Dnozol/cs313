@@ -6,7 +6,7 @@ $content = htmlspecialchars($_POST['content']);
 
 //echo "Trying to insert: courseid: $course_id, date: $date, content: $content";
 
-require_once("dbconnect.php");
+require_once("dbConnect.php");
 $db = get_db();
 
 // Get the Course from the DB

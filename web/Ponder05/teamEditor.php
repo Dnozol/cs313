@@ -1,6 +1,6 @@
 <?php 
 	require('db.php'); 
-	$db = get_db()
+	$db = get_db();
 ?>
 
 <!DOCTYPE html>

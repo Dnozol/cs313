@@ -5,7 +5,7 @@
 	$query = 'SELECT team_name, pokemon_name FROM team_pokemon tp JOIN team t ON t.team_id = tp.team_id JOIN pokemon p on p.pokemon_id = tp.pokemon_id;';
 	$stmt = $db->prepare($query);
 	$stmt->execute();
-	$teams = $stmt->fecthAll(PDO::FECTH_ASSOC);
+	$teams = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>

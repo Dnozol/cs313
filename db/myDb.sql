@@ -61,9 +61,6 @@ VALUES
 ( 'Pikachu', 'Electric', NULL),
 ( 'Raichu', 'Electirc', NULL);
 
-INSERT INTO team 
-(team_name) VALUES ('EXAMPLE');
-
 INSERT INTO team_pokemon
 VALUES
 ( DEFAULT

@@ -1,6 +1,13 @@
 <?php 
 	require('db.php'); 
 	$db = get_db()
+
+	$query = 'SELECT team_name, pokemon_name FROM team_pokemon
+			  JOIN team t ON t.team_id = tp.team_id
+			  JOIN pokemon p on p.pokemon_id = tp.pokemon.id;';
+	$stmt = $db->prepare($query);
+	$stmt->execute();
+	$teams = $stmt->fecthAll(PDO::FECTH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,30 +27,11 @@
 		<div class="main">
 			<h1>Current Teams</h1>
 			<?php
-				// Create and execute prepared statement
-			$stmt = $db->prepare('SELECT team_name, pokemon_1, pokemon_2, pokemon_3, pokemon_4,
-								  pokemon_5, pokemon_6 FROM team WHERE id = :id');
-			$stmt->bindValue(':id', $id, PDO::PARAM_INT);
-			$stmt->execute();
-
-			$rows = $stmt->fetchALL(PDO::FETCH_ASSOC);
-
-			if (sizeof($rows) < 1) {
-				echo '<h1>You have no team</h1>';
-			} else {
-				$row = $rows[0];
-
-				$name = $rows['team_name'];
-				$p1 = $rows['pokemon_1'];
-				$p2 = $rows['pokemon_2'];
-				$p3 = $rows['pokemon_3'];
-				$p4 = $rows['pokemon_4'];
-				$p5 = $rows['pokemon_5'];
-				$p6 = $rows['pokemon_6'];
-				
-				echo '<table><th><td>' . $name . '</td></th/><tr><td>' . $p1 . '</td><td>' . $p2 . '</td><td>' . $p3 .
-					 '</td></tr><tr><td>' . $p4 . '</td><td>' . $p5 . '</td><td>' . $p6 . '</td></tr></table>';
-			}
+				foreach($teams as $team) {
+					$team_name = $team['team_name'];
+					$pokemon_name = $team['pokemon_name'];
+					
+				}
 			?>
 		</div><!--end of main flexbox-->
 	</div><!--end of flex container

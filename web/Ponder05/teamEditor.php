@@ -1,6 +1,11 @@
 <?php 
-	require('db.php'); 
+	require_once('db.php'); 
 	$db = get_db();
+
+	$query = 'SELECT team_name, pokemon_name FROM team_pokemon tp JOIN team t ON t.team_id = tp.team_id JOIN pokemon p on p.pokemon_id = tp.pokemon_id;';
+	$stmt = $db->prepare($query);
+	$stmt->execute();
+	$teams = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +29,13 @@
 		<div class="main">
 			<h1>Team Editor</h1>
 				<?php
-				// Create and execute prepared statement
+					foreach($teams as $team) {
+					$team_name = $team['team_name'];
+					$pokemon_name = $team['pokemon_name'];
+
+					echo "<p>$team_name</p>";
+					echo "<p>$pokemon_name</p>";
+				}
 				?>
 		</div><!--end of main flexbox-->
 	</div>

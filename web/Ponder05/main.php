@@ -32,6 +32,6 @@
 				}
 			?>
 		</div><!--end of main flexbox-->
-	</div><!--end of flex container
+	</div><!--end of flex container-->
 </body>
 </html>

@@ -2,12 +2,12 @@
 	require('db.php'); 
 	$db = get_db()
 
-	// $query = 'SELECT team_name, pokemon_name FROM team_pokemon
-	// 		  JOIN team t ON t.team_id = tp.team_id
-	// 		  JOIN pokemon p on p.pokemon_id = tp.pokemon.id;';
-	// $stmt = $db->prepare($query);
-	// $stmt->execute();
-	// $teams = $stmt->fecthAll(PDO::FECTH_ASSOC);
+	$query = 'SELECT team_name, pokemon_name FROM team_pokemon tp
+			  JOIN team t ON t.team_id = tp.team_id
+			  JOIN pokemon p on p.pokemon_id = tp.pokemon_id;';
+	$stmt = $db->prepare($query);
+	$stmt->execute();
+	$teams = $stmt->fecthAll(PDO::FECTH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,7 +30,7 @@
 				foreach($teams as $team) {
 					$team_name = $team['team_name'];
 					$pokemon_name = $team['pokemon_name'];
-					
+
 				}
 			?>
 		</div><!--end of main flexbox-->

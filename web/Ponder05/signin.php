@@ -20,8 +20,8 @@
 		<div class="main">
 			<form action="main.php" method="post">
 
-				Username: <input type="text" name="username"><br>
-				Password:  <input type = "password" name="password"><br>
+				Username: <input type="text" name="username" required><br>
+				Password:  <input type = "password" name="password" required><br>
 				<button type="submit">Sign in</button>
 				<button type="reset">Clear</button>
 

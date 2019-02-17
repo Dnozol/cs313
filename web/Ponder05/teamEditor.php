@@ -21,10 +21,11 @@
 	<?php include('banners.php'); ?>
 	<div class="flex-container">
 		<div class="sidebar">
+			<a href="main.php">Return to HomePage</a>
 
-			<button>Remove Team(s)</button>
-			<button>Add Team</button>
-			<button>Edit Team</button>
+			<a href="removeTeam.php">Remove Team(s)</a>
+			<a href="addTeam.php">Add Team</a>
+			<a href="editTeam.php">Edit Team</a>
 		</div> <!--end of sidebar flexbox-->
 		<div class="main">
 			<h1>Team Editor</h1>

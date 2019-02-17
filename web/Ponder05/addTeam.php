@@ -21,7 +21,7 @@
 	<?php include('banners.php'); ?>
 	<div class="flex-container">
 		<div class="sidebar">
-
+		<a href="main.php">Return to HomePage</a>
 
 		</div> <!--end of sidebar flexbox-->
 		<div class="main">

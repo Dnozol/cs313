@@ -22,10 +22,11 @@
 	<div class="flex-container">
 		<div class="sidebar">
 			<a href="main.php">Return to HomePage</a>
+			<br><br>
 
-			<a href="removeTeam.php">Remove Team(s)</a>
-			<a href="addTeam.php">Add Team</a>
-			<a href="editTeam.php">Edit Team</a>
+			<a href="removeTeam.php">Remove Team(s)</a><br>
+			<a href="addTeam.php">Add Team</a><br>
+			<a href="editTeam.php">Edit Team</a><br>
 		</div> <!--end of sidebar flexbox-->
 		<div class="main">
 			<h1>Team Editor</h1>

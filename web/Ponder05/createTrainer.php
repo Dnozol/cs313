@@ -1,7 +1,7 @@
 <?php
 	require_once('db.php'); 
 	$db = get_db();
-	// $query = 'INSERT INTO trainer (trainer_name, password) VALUES (:trainer_name, :password)';
+	$query = 'INSERT INTO trainer (trainer_name, password) VALUES (:trainer_name, :password)';
 
 	// if (!isset($_POST['trainer_name']) || strlen($_POST['trainer_name']) == 0) {
 	// 	header('Location: register.php');

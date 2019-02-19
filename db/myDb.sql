@@ -6,7 +6,7 @@ DROP TABLE team;
 -- Create tables
 CREATE TABLE trainer
 ( trainer_id SERIAL PRIMARY KEY
-, trainer_name  VARCHAR(20) NOT NULL
+, trainer_name  VARCHAR(20) NOT NULL UNIQUE
 , password VARCHAR(20) NOT NULL
 );
 
@@ -71,4 +71,10 @@ VALUES
 , (SELECT pokemon_id FROM pokemon WHERE pokemon_name = 'Pikachu')
 );
 
+INSERT INTO team_pokemon
+VALUES
+( DEFAULT
+, (SELECT team_id FROM team WHERE team_name = 'EXAMPLE')
+, (SELECT pokemon_id FROM pokemon WHERE pokemon_name = 'Caterpie')
+);
 

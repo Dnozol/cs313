@@ -13,7 +13,7 @@
 
 		<div class="sidebar">
 
-			This is a side bar
+			<a href="register.php">Create New User</a>
 
 		</div><!--end of sidebar flexbox-->
 

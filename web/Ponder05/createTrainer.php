@@ -19,7 +19,7 @@
 
 
 	$db = get_db();
-	// $query = 'INSERT INTO trainer (trainer_name, password) VALUES (:trainer_name, :password);';
+	$query = 'INSERT INTO trainer (trainer_name, password) VALUES (:trainer_name, :password);';
 
 	// $stmt = $db->prepare($query);
 	// $stmt->bindValue(':trainer_name', $trainer_name, PDO::PARAM_STR);

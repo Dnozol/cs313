@@ -7,7 +7,7 @@ DROP TABLE team;
 CREATE TABLE trainer
 ( trainer_id SERIAL PRIMARY KEY
 , trainer_name  VARCHAR(20) NOT NULL UNIQUE
-, password VARCHAR(20) NOT NULL
+, password VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE pokemon

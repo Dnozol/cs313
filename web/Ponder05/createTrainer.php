@@ -27,7 +27,7 @@
 	$stmt->bindValue(':trainer_name', $trainer_name, PDO::PARAM_STR);
 	$stmt->bindValue(':password', $password, PDO::PARAM_STR);
 	$stmt->execute();
-
+	echo "part 3";
 	header('Location: signin.php');
 	die();
 ?>

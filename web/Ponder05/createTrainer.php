@@ -2,7 +2,7 @@
 	require_once('db.php'); 
 
 	$trainer_name = $_POST['trainer_name'];
-	$password = password_hash($_POST['password']);
+	$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 	
 	echo "$trainer_name";
 

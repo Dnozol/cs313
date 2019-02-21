@@ -17,17 +17,18 @@
 		die();
 	} 
 
- 	echo "<br>What?";
-
 	$db = get_db();
 	$query = 'INSERT INTO trainer (trainer_name, password) VALUES (:trainer_name, :password);';
 	echo "Part2";
 
 	$stmt = $db->prepare($query);
+	echo "stop1";
 	$stmt->bindValue(':trainer_name', $trainer_name, PDO::PARAM_STR);
+	echo "stop2";
 	$stmt->bindValue(':password', $password, PDO::PARAM_STR);
+	echo "stop3";
 	$stmt->execute();
-	echo "part 3";
+	echo "stop4";
 	header('Location: signin.php');
 	die();
 ?>

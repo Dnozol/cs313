@@ -22,7 +22,7 @@
 	$query = 'INSERT INTO trainer (trainer_name, password) VALUES (:trainer_name, :password);';
 
 	$stmt = $db->prepare($query);
-	// $stmt->bindValue(':trainer_name', $trainer_name, PDO::PARAM_STR);
+	$stmt->bindValue(':trainer_name', $trainer_name, PDO::PARAM_STR);
 	// $stmt->bindValue(':password', $password, PDO::PARAM_STR);
 	// $stmt->execute();
 

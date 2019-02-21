@@ -13,17 +13,17 @@
 		die();
 	} 
 
-	$trainer_name = $_POST['trainer_name'];
-	$password = password_hash($_POST['password']);
+	// $trainer_name = $_POST['trainer_name'];
+	// $password = password_hash($_POST['password']);
 	
-	$db = get_db();
-	$query = 'INSERT INTO trainer (trainer_name, password) VALUES (:trainer_name, :password);';
+	// $db = get_db();
+	// $query = 'INSERT INTO trainer (trainer_name, password) VALUES (:trainer_name, :password);';
 
-	$stmt = $db->prepare($query);
-	$stmt->bindValue(':trainer_name', $trainer_name, PDO::PARAM_STR);
-	$stmt->bindValue(':password', $password, PDO::PARAM_STR);
-	$stmt->execute();
+	// $stmt = $db->prepare($query);
+	// $stmt->bindValue(':trainer_name', $trainer_name, PDO::PARAM_STR);
+	// $stmt->bindValue(':password', $password, PDO::PARAM_STR);
+	// $stmt->execute();
 
-	header('Location: signin.php');
-	die();
+	// header('Location: signin.php');
+	// die();
 ?>

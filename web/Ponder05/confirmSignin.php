@@ -7,9 +7,9 @@
 
 
 	$db = get_db();
-	$query = 'SELECT trainer_name FROM trainer WHERE trainer_name = $trainer_name';
+	// $query = 'SELECT trainer_name FROM trainer WHERE trainer_name = $trainer_name';
 
-	$echo "$query";
+	// $echo "$query";
 	
 	// $stmt = $db->prepare($query);
 	// $stmt->bindValue(':trainer_name', $trainer_name, PDO::PARAM_STR);

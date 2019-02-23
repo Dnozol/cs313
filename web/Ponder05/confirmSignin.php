@@ -7,6 +7,7 @@
 
 
 	$db = get_db();
+	$echo = "ready<br>";
 	$query = 'SELECT trainer_name FROM trainer WHERE trainer_name = $trainer_name';
 
 	// $echo "$query";

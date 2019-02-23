@@ -29,7 +29,7 @@
 		<div class="main">
 			<form action="confirmSignin.php" onsubmit="return validateUser()" method="post">
 
-				Username: <input type="text" name="username" required><br>
+				Username: <input type="text" name="trainer_name" required><br>
 				Password:  <input type = "password" name="password" required><br>
 				<button type="submit">Sign in</button>
 				<button type="reset">Clear</button>

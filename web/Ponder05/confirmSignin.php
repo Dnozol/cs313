@@ -6,10 +6,8 @@
 	
 
 	$db = get_db();
-	$query = 'SELECT trainer_name FROM trainer WHERE trainer_name = $trainer_name';
+	$query = 'SELECT trainer_name FROM trainer WHERE trainer_name = :trainer_name';
 
-	echo "$query";
-	echo "change";
 	$stmt = $db->prepare($query);
 	$stmt->bindValue(':trainer_name', $trainer_name, PDO::PARAM_STR);
 	$stmt->bindValue(':password', $password, PDO::PARAM_STR);

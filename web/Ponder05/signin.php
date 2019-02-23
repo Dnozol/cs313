@@ -7,14 +7,6 @@
  	<link rel="stylesheet" type="text/css" href="ponder05.css">
 	<title>Sign in</title>
 
-	<script type="text/javascript">
-		function validateUser() {
-			//check username
-			//if found check password
-			//else return false;
-		}
-	</script>
-
 </head>
 <body>
 	<?php include 'banners.php';?>

@@ -3,8 +3,6 @@
 
 	$trainer_name = $_POST['trainer_name'];
 	$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-	
-	echo "$trainer_name";
 
 	if (!isset($_POST['trainer_name']) || strlen($_POST['trainer_name']) == 0) {
 		header('Location: register.php');
@@ -19,7 +17,6 @@
 
 	$db = get_db();
 	$query = 'INSERT INTO trainer (trainer_name, password) VALUES (:trainer_name, :password);';
-	echo "Part2";
 
 	$stmt = $db->prepare($query);
 	$stmt->bindValue(':trainer_name', $trainer_name, PDO::PARAM_STR);

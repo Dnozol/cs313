@@ -6,6 +6,15 @@
  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
  	<link rel="stylesheet" type="text/css" href="ponder05.css">
 	<title>Sign in</title>
+
+	<script type="text/javascript">
+		function validateUser() {
+			//check username
+			//if found check password
+			//else return false;
+		}
+	</script>
+
 </head>
 <body>
 	<?php include 'banners.php';?>
@@ -18,7 +27,7 @@
 		</div><!--end of sidebar flexbox-->
 
 		<div class="main">
-			<form action="main.php" method="post">
+			<form action="main.php" onsubmit="return validateUser()" method="post">
 
 				Username: <input type="text" name="username" required><br>
 				Password:  <input type = "password" name="password" required><br>

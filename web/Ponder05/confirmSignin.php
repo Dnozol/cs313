@@ -5,9 +5,9 @@
 	$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 	
 
+	$echo = "ready<br>";
 
 	$db = get_db();
-	$echo = "ready<br>";
 	$query = 'SELECT trainer_name FROM trainer WHERE trainer_name = $trainer_name';
 
 	// $echo "$query";

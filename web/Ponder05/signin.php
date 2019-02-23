@@ -27,7 +27,7 @@
 		</div><!--end of sidebar flexbox-->
 
 		<div class="main">
-			<form action="main.php" onsubmit="return validateUser()" method="post">
+			<form action="confirmSignin.php" onsubmit="return validateUser()" method="post">
 
 				Username: <input type="text" name="username" required><br>
 				Password:  <input type = "password" name="password" required><br>

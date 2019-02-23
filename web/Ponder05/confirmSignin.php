@@ -6,6 +6,10 @@
 	
 
 	$echo = "ready<br>";
+	$echo = "show this!";
+	for ($i = 0; $i < 10; i++) {
+		echo "$i<br>";
+	}
 
 	$db = get_db();
 	$query = 'SELECT trainer_name FROM trainer WHERE trainer_name = $trainer_name';

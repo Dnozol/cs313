@@ -8,7 +8,7 @@
 
 	$db = get_db();
 	$query = 'SELECT trainer_name FROM trainer WHERE trainer_name = :trainer_name';
-	$selectresult = mysql_query($query);
+
 
 
 	$stmt = $db->prepare($query);
@@ -16,11 +16,9 @@
 	//$stmt->bindValue(':password', $password, PDO::PARAM_STR);
 	$stmt->execute();
 
-	if(mysql_num_rows($selectresult) > 0) {
-		echo "found";
-	}
-	else {
-		echo "not found";
+	$status = available($trainer_name);
+	if ($status === 1) {
+		echo "this worked";
 	}
 	
 	//header('Location: main.php');

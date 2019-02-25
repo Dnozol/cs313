@@ -34,11 +34,12 @@
 						echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";
 						echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";
 						echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";
-					
+						
+						echo "</select>";	
 					}
-					echo "</select>";
+				
 		
-				?>
+				?>// end php
 			} // end for loop
 		}
  	</script>

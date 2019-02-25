@@ -31,10 +31,12 @@
 		</div> <!--end of sidebar flexbox-->
 		<div class="main">
 		<h1>Add New team</h1>
-		<select id="pokemon_select">
-			<option value="empty">Empty Slot</option>
+
 			<?php
 				foreach($pokemon_list as $pokemon) {
+
+					echo "<select id='pokemon_select'>";
+					echo "<option value='empty'>Empty Slot</option>";
 					$pokemon_name = $pokemon['pokemon_name'];
 
 
@@ -44,11 +46,11 @@
 					echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";
 					echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";
 					echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";
-				
+					
+					echo "</select>";
 				}
 			?>
 		<br>
-		</select>
 		<input type="submit" value="Add Team">
 		</div><!--end of main flexbox-->
 	</div>

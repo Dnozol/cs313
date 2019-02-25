@@ -78,3 +78,20 @@ VALUES
 , (SELECT pokemon_id FROM pokemon WHERE pokemon_name = 'Caterpie')
 );
 
+INSERT INTO team 
+(team_name) VALUES ('EXAMPLE2');
+
+
+INSERT INTO team_pokemon
+VALUES
+( DEFAULT
+, (SELECT team_id FROM team WHERE team_name = 'EXAMPLE2')
+, (SELECT pokemon_id FROM pokemon WHERE pokemon_name = 'Charmander')
+);
+
+INSERT INTO team_pokemon
+VALUES
+( DEFAULT
+, (SELECT team_id FROM team WHERE team_name = 'EXAMPLE2')
+, (SELECT pokemon_id FROM pokemon WHERE pokemon_name = 'Bulbasaur')
+);

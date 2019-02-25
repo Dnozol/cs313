@@ -29,8 +29,9 @@
 					$team_name = $team['team_name'];
 					$pokemon_name = $team['pokemon_name'];
 
+
 					echo "<p>$team_name</p>";
-					echo "<p>$pokemon_name</p>";
+					echo "<p>$pokemon_name</p><br>";
 				}
 			?>
 		</div><!--end of main flexbox-->

@@ -2,10 +2,11 @@
 	require_once('db.php'); 
 	$db = get_db();
 
-	$query = 'SELECT team_name, pokemon_name FROM team_pokemon tp JOIN team t ON t.team_id = tp.team_id JOIN pokemon p on p.pokemon_id = tp.pokemon_id;';
+	$query = 'SELECT pokemon_name FROM pokemon;';
 	$stmt = $db->prepare($query);
 	$stmt->execute();
-	$teams = $stmt->fetchAll(PDO::FETCH_ASSOC);
+	$pokemon_list = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
 ?>
 
 <!DOCTYPE html>
@@ -16,12 +17,26 @@
 	<meta charset="utf-8"/>
  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 	<script type="text/javascript">
+ 		
+ 	</script>
 </head>
 <body>
 	<?php include('banners.php'); ?>
 	<div class="flex-container">
 		<div class="sidebar">
 		<a href="main.php">Return to HomePage</a>
+
+		<select id="pokemon_select">
+			<?php
+				foreach($pokemon_list as $pokemon) {
+					$pokemon_name = $pokemon['pokemon_name'];
+
+
+					echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";
+				}
+			?>
+		</select>
 
 		</div> <!--end of sidebar flexbox-->
 		<div class="main">

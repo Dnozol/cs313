@@ -27,6 +27,7 @@
 		</div> <!--end of sidebar flexbox-->
 		<div class="main">
 		<h1>Add New team</h1>
+		<input type="text" name="team_name" placeholder="Team Name"><br>
 		<?php
 			for ($i = 0; $i < 6; $i++){
 

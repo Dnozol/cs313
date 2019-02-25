@@ -17,9 +17,7 @@
 	<meta charset="utf-8"/>
  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
- 	<script type="text/javascript">
- 		
- 	</script>
+
 </head>
 <body>
 	<?php include('banners.php'); ?>
@@ -32,7 +30,7 @@
 		<?php
 			for ($i = 0; $i < 6; $i++){
 
-				echo "<select id='pokemon_select'>";
+				echo "<select id='pokemon_select" . $i . "'>";
 				echo "<option value='empty'>Empty Slot</option>";
 
 				foreach($pokemon_list as $pokemon) {

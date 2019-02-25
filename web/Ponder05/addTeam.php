@@ -18,24 +18,7 @@
  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
  	<script type="text/javascript">
- 		function repeatList(repeat) {
- 			for(var i = 0; i < repeat; i++){
-
-	 			<?php
-	 				echo "<select id='pokemon_select'>";
-					echo "<option value='empty'>Empty Slot</option>";
-
-					foreach($pokemon_list as $pokemon) {
-						$pokemon_name = $pokemon['pokemon_name'];
-
-						echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";						
-
-					}
-					echo "</select>";
-		
-				?>// end php
-			} // end for loop
-		}
+ 		
  	</script>
 </head>
 <body>
@@ -44,8 +27,25 @@
 		<div class="sidebar">
 		<a href="main.php">Return to HomePage</a>
 		</div> <!--end of sidebar flexbox-->
-		<div class="main" onload="repeatList(6)">
+		<div class="main">
 		<h1>Add New team</h1>
+		<?php
+			for ($i = 0; $i < 6; $i++){
+
+				echo "<select id='pokemon_select'>";
+				echo "<option value='empty'>Empty Slot</option>";
+
+				foreach($pokemon_list as $pokemon) {
+					$pokemon_name = $pokemon['pokemon_name'];
+
+					echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";						
+
+				}
+				echo "</select>";
+			}
+
+		?>
+
 		<br>
 		<input type="submit" value="Add Team">
 		</div><!--end of main flexbox-->

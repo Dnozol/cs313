@@ -9,7 +9,7 @@
 	$db = get_db();
 	$query = 'SELECT trainer_name FROM trainer WHERE trainer_name = :trainer_name';
 
-
+	$row_count = sqlsrv_num_row($)
 
 	$stmt = $db->prepare($query);
 	$stmt->bindValue(':trainer_name', $trainer_name, PDO::PARAM_STR);

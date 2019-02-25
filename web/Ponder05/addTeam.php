@@ -27,6 +27,10 @@
 		<div class="sidebar">
 		<a href="main.php">Return to HomePage</a>
 
+
+		</div> <!--end of sidebar flexbox-->
+		<div class="main">
+			
 		<select id="pokemon_select">
 			<?php
 				foreach($pokemon_list as $pokemon) {
@@ -37,10 +41,6 @@
 				}
 			?>
 		</select>
-
-		</div> <!--end of sidebar flexbox-->
-		<div class="main">
-
 		</div><!--end of main flexbox-->
 	</div>
 

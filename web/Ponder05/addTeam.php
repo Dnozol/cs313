@@ -27,26 +27,27 @@
 		</div> <!--end of sidebar flexbox-->
 		<div class="main">
 		<h1>Add New team</h1>
+		<form action="teamToDb.php" method="POST">
 		<input type="text" name="team_name" placeholder="Team Name"><br>
-		<?php
-			for ($i = 0; $i < 6; $i++){
+			<?php
+				for ($i = 0; $i < 6; $i++){
 
-				echo "<select id='pokemon_select" . $i . "'>";
-				echo "<option value='empty'>Empty Slot</option>";
+					echo "<select id='pokemon_select" . $i . "'>";
+					echo "<option value='empty'>Empty Slot</option>";
 
-				foreach($pokemon_list as $pokemon) {
-					$pokemon_name = $pokemon['pokemon_name'];
+					foreach($pokemon_list as $pokemon) {
+						$pokemon_name = $pokemon['pokemon_name'];
 
-					echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";						
+						echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";						
 
+					}
+					echo "</select>";
 				}
-				echo "</select>";
-			}
 
-		?>
-
+			?>
 		<br>
 		<input type="submit" value="Add Team">
+		</form>
 		</div><!--end of main flexbox-->
 	</div>
 

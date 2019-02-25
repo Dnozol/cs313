@@ -41,7 +41,7 @@
 				}
 			?>
 		</select>
-		<input type="submit">Add Team<br>
+		<input type="submit" value="Add Team">
 		</div><!--end of main flexbox-->
 	</div>
 

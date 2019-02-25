@@ -43,12 +43,9 @@
 	<div class="flex-container">
 		<div class="sidebar">
 		<a href="main.php">Return to HomePage</a>
-
-
 		</div> <!--end of sidebar flexbox-->
-		<div class="main">
+		<div class="main" onload="repeatList(6)">
 		<h1>Add New team</h1>
-		<script type="text/javascript">repeatList(6);</script>
 		<br>
 		<input type="submit" value="Add Team">
 		</div><!--end of main flexbox-->

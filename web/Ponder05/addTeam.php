@@ -28,13 +28,7 @@
 					foreach($pokemon_list as $pokemon) {
 						$pokemon_name = $pokemon['pokemon_name'];
 
-						echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";
-						echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";
-						echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";
-						echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";
-						echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";
-						echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";
-						
+						echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";						
 
 					}
 					echo "</select>";

@@ -12,7 +12,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Team Editor</title>
+	<title>Add Team</title>
 	<link rel="stylesheet" type="text/css" href="ponder05.css">
 	<meta charset="utf-8"/>
  	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -30,7 +30,7 @@
 
 		</div> <!--end of sidebar flexbox-->
 		<div class="main">
-			
+		<h1>Add New team</h1>
 		<select id="pokemon_select">
 			<?php
 				foreach($pokemon_list as $pokemon) {
@@ -41,6 +41,7 @@
 				}
 			?>
 		</select>
+		<input type="submit">Add Team<br>
 		</div><!--end of main flexbox-->
 	</div>
 

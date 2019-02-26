@@ -13,7 +13,7 @@
 	$team_name = htmlspecialchars($_POST['team_name']);
 	$team_pokemon = $_POST['pokemon_name'];
 
-	$query = 'INSERT INTO team_name FROM team VALUES (:team_name);'; 
+	$query = 'INSERT INTO team (team_name) VALUES (:team_name);'; 
 	$stmt = $db->prepare($query);
 	$stmt->bindValue(":team_name", $team_name, PDO::PARAM_STR);
 	$stmt->execute();

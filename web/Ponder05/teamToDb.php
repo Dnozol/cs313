@@ -18,4 +18,7 @@
 	$stmt->bindValue(":team_name", $team_name, PDO::PARAM_STR);
 	$stmt->execute();
 	$pokemon_list = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+	header('Location: addTeam.php');
+	die();
 ?>

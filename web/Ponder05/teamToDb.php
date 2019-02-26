@@ -10,6 +10,7 @@
 	// 	echo "$value<br>";
 	// }
 print_r($_SESSION);
+print_r($pokemon);
 	$team_name = htmlspecialchars($_POST['team_name']);
 	$team_pokemon = $_POST['pokemon_name'];
 

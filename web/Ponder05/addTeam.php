@@ -1,12 +1,15 @@
 <?php 
 	require_once('db.php'); 
+	session_start();
 	$db = get_db();
+	$_SESSION['team'] = array();
 
 	$query = 'SELECT pokemon_name FROM pokemon;';
 	$stmt = $db->prepare($query);
 	$stmt->execute();
 	$pokemon_list = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
+	
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +41,7 @@
 					foreach($pokemon_list as $pokemon) {
 						$pokemon_name = $pokemon['pokemon_name'];
 
-						echo "<option value='" . $pokemon_name . "'>" . $pokemon_name . "</option>";						
+						echo "<option value='" . $pokemon_name . "' name=pokemon[]" . $pokemon_name . "</option>";						
 
 					}
 					echo "</select>";

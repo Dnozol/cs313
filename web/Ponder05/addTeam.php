@@ -3,11 +3,14 @@
 	session_start();
 	$db = get_db();
 	$_SESSION['team'] = array();
+	$_SESSION['trainer'] = $_POST['trainer'];
 
 	$query = 'SELECT pokemon_name FROM pokemon;';
 	$stmt = $db->prepare($query);
 	$stmt->execute();
 	$pokemon_list = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+	//if exists
 
 ?>
 

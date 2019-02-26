@@ -5,10 +5,7 @@
 	$_SESSION['team'] = array();
 
 	$pokemon = $_POST['pokemon'];
-	echo "yas";
-	print_r($_POST['pokemon']);
-	echo $_POST['pokemon'];
-	echo "yas2";
+
 	// foreach ($pokemon as $key => $value) {
 	// 	array_push($_SESSION['team'], $value);
 	// 	echo "$value<br>";
@@ -17,10 +14,10 @@
 	$team_name = htmlspecialchars($_POST['team_name']);
 	$team_pokemon = $_POST['pokemon_name'];
 
-	$query = 'INSERT INTO team (team_name) VALUES (:team_name);'; 
-	$stmt = $db->prepare($query);
-	$stmt->bindValue(":team_name", $team_name, PDO::PARAM_STR);
-	$stmt->execute();
+	// $query = 'INSERT INTO team (team_name) VALUES (:team_name);'; 
+	// $stmt = $db->prepare($query);
+	// $stmt->bindValue(":team_name", $team_name, PDO::PARAM_STR);
+	// $stmt->execute();
 	$pokemon_list = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 	// header('Location: addTeam.php');

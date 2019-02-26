@@ -9,11 +9,6 @@
 	$stmt->execute();
 	$pokemon_list = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-	$pokemon_team=$_POST['pokemon'];
-	foreach ($item as $key => $value) {
-	
-		array_push($_SESSION['team'], $value);
-	}
 ?>
 
 <!DOCTYPE html>

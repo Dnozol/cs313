@@ -3,7 +3,6 @@
 	session_start();
 	$db = get_db();
 	$_SESSION['team'] = array();
-	$_SESSION['trainer'] = $_POST['trainer'];
 
 	$query = 'SELECT pokemon_name FROM pokemon;';
 	$stmt = $db->prepare($query);

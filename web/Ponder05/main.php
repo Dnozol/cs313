@@ -9,7 +9,7 @@
 	$teams = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 	$_SESSION['trainer'] = $_POST['trainer'];
-	echo "<p>$_POST['trainer']</p>";
+	//echo "<p>$_POST['trainer']</p>";
 
 ?>
 <!DOCTYPE html>

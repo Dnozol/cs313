@@ -21,6 +21,6 @@
 	$stmt->execute();
 	$pokemon_list = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-	header('Location: addTeam.php');
-	die();
+	// header('Location: addTeam.php');
+	// die();
 ?>

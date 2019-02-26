@@ -13,7 +13,7 @@
 	$team_name = htmlspecialchars($_POST['team_name']);
 	$team_pokemon = $_POST['pokemon_name'];
 
-	$query = 'INSERT INTO team (team_name) VALUES ("' . $team_name. '");'; 
+	$query = 'INSERT INTO team (team_name) VALUES ("' . $team_name . '");'; 
 	$stmt = $db->prepare($query);
 	$stmt->execute();
 	$pokemon_list = $stmt->fetchAll(PDO::FETCH_ASSOC);

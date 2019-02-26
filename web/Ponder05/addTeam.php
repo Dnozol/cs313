@@ -41,9 +41,10 @@
 
 					echo "<select id='pokemon_select'>";
 					echo "<option value='empty'>Empty Slot</option>";
-
+					print_r($pokemon);
+					print_r($pokemon_list);
 					foreach($pokemon_list as $pokemon) {
-						$pokemon_name = $pokemon_list['pokemon_name'];
+						$pokemon_name = $pokemon['pokemon_name'];
 
 						echo "<option value='" . $pokemon_name . "' name=pokemon[]" . $pokemon_name . "</option>";						
 

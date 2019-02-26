@@ -15,7 +15,7 @@
 
 	$query = 'INSERT INTO team_name FROM team VALUES (:team_name);'; 
 	$stmt = $db->prepare($query);
-	$stmt->bindValue(":team_name", $team_name, PDO::FETCH_STR);
+	$stmt->bindValue(":team_name", $team_name, PDO::PARAM_STR);
 	$stmt->execute();
 	$pokemon_list = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>

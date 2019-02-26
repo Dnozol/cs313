@@ -12,7 +12,7 @@
 	$pokemon_team=$_POST['pokemon'];
 	foreach ($item as $key => $value) {
 	
-		array_push($_SESSION['pokemon'], $value);
+		array_push($_SESSION['team'], $value);
 	}
 ?>
 
@@ -39,7 +39,7 @@
 			<?php
 				for ($i = 0; $i < 6; $i++){
 
-					echo "<select id='pokemon_select" . $i . "'>";
+					echo "<select id='pokemon_select'>";
 					echo "<option value='empty'>Empty Slot</option>";
 
 					foreach($pokemon_list as $pokemon) {

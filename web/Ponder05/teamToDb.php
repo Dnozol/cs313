@@ -5,12 +5,11 @@
 	$_SESSION['team'] = array();
 
 	$pokemon = $_POST['pokemon'];
-	// foreach ($pokemon as $key => $value) {
-	// 	array_push($_SESSION['team'], $value);
-	// 	echo "$value<br>";
-	// }
-print_r($_SESSION);
-print_r($pokemon);
+	foreach ($pokemon as $key => $value) {
+		array_push($_SESSION['team'], $value);
+		echo "$value<br>";
+	}
+
 	$team_name = htmlspecialchars($_POST['team_name']);
 	$team_pokemon = $_POST['pokemon_name'];
 

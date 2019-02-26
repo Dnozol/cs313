@@ -5,6 +5,8 @@
 	$_SESSION['team'] = array();
 
 	$pokemon = $_POST['pokemon'];
+	print_r($_POST['pokemon']);
+	echo "$_POST['pokemon']);"
 	// foreach ($pokemon as $key => $value) {
 	// 	array_push($_SESSION['team'], $value);
 	// 	echo "$value<br>";

@@ -22,4 +22,24 @@
 
 	// header('Location: addTeam.php');
 	// die();
+
+
+
+
+
+
+
+// Node.js notes
+/*
+	a way of running javascript programs
+	from the console: node demo.js // runs demo.js
+	
+
+
+*/
+
+
+
+
+
 ?>

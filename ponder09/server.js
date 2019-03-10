@@ -9,7 +9,7 @@ app.set("view engine", "ejs");
 app.use(express.static("public"));
 
 app.get("/confirm", function(request, response) {
-	console.log("Playing game...");
+	console.log("Confirmation Page...");
 
 	const weight = request.query.weight;
 	const type = request.query.type;
